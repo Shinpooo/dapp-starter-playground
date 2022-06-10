@@ -9,24 +9,66 @@ const Home: FC = () => {
 	return (
 		<div className="dark bg-gray-900">
 			<div className="relative flex flex-col justify-around min-h-screen py-4 bg-gray-100 dark items-top dark:bg-gray-900 sm:items-center sm:pt-0 max-w-4xl mx-auto">
-				<div className="mx-auto w-full mb-10">
+				<div className="mx-auto w-full mb-10 py-16">
 					<div className="flex justify-between pt-8 sm:pt-0">
 						<h1 className="text-4xl font-bold dark:text-white">👋 Hi! Pooshin here :)</h1>
 						<div className='my-auto'><ConnectWallet /></div>
 					</div>
 				</div>
+				<div className='text-white text-4xl font-bold mb-8'>Things I do</div>
 				<div className="mx-auto w-full">
 
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-livai hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">Building things</div>
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-ape hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
+							<p className='text-4xl'>Building things 💻</p>
+							<p className='text-lg'>Currently focused on web3 projects</p>
+						</div>
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-bojji hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+							<p className='text-4xl'>2D Animation ⚔️</p>
+							<p className='text-lg'>Enjoyooor</p>
+						</div>
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-tsunade hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+							<p className='text-4xl'>Investing 💰</p>
+							<p className='text-lg'>Mainly crypto research and stocks</p>
+						</div>
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-luffy hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
+							<p className='text-4xl'>Animes 📺</p>
+							<p className='text-lg'>Naruto, SNK, HXH, KNY, Bojji</p>
+						</div>
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-kira hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+							<p className='text-4xl'>Research papers ✍️</p>
+							<p className='text-lg'>Energy, Optimization, Data, ML</p>
+						</div>
+
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-umaru hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
+							<p className='text-4xl'>Gaming 🕹️</p>
+							<p className='text-lg'>Dofus, Diablo/PoE, TFT, Smash, league</p>
+						</div>
+
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-rengoku hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+							<p className='text-4xl'>Gym 🏋️‍♂️</p>
+							<p className='text-lg'>Push, pull, legs</p>
+						</div>
+
 						
-						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Investing</div>
+
+						{/* <div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-livai hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+							<p className='text-4xl'>Design</p>
+							<p className='text-lg'>100% newbie in 3D design and 2D animation</p>
+						</div>
+
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-livai hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+							<p className='text-4xl'>Quest</p>
+							<p className='text-lg'>The whole purpose of this website</p>
+						</div> */}
+						
+						{/* <div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Investooor</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Anime</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Gaming</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Sports</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Traveling</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Design</div>
-						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Engineering and Research</div>
+						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Engineering and Research</div> */}
 					</div>
 
 					{/* <div className="mt-8 overflow-hidden bg-white shadow dark:bg-gray-800 sm:rounded-lg">
@@ -152,7 +194,7 @@ const Home: FC = () => {
 						</div>
 					</div> */}
 					
-					<div className="flex justify-center mt-4 sm:items-center sm:justify-between">
+					{/* <div className="flex justify-center mt-4 sm:items-center sm:justify-between">
 						<div className="text-sm text-center text-gray-500 sm:text-left">
 							<div className="flex items-center">
 								<ShareIcon className="w-5 h-5 -mt-px text-gray-400" />
@@ -162,7 +204,7 @@ const Home: FC = () => {
 								</a>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
