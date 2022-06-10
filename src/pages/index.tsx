@@ -8,10 +8,10 @@ import Image from 'next/image';
 const Home: FC = () => {
 	return (
 		<div className="dark bg-gray-900">
-			<div className="relative flex flex-col justify-around min-h-screen py-4 bg-gray-100 dark items-top dark:bg-gray-900 sm:items-center sm:pt-0 max-w-4xl mx-auto">
+			<div className="relative flex flex-col justify-around min-h-screen py-4 bg-gray-100 dark items-top dark:bg-gray-900 sm:items-center sm:pt-0 max-w-4xl mx-auto px-6">
 				<div className="mx-auto w-full mb-10 py-16">
 					<div className="flex justify-between pt-8 sm:pt-0">
-						<h1 className="text-4xl font-bold dark:text-white">👋 Hi! Pooshin here :)</h1>
+						<h1 className="text-2xl md:text-4xl font-bold dark:text-white">👋 Hi! Pooshin here :)</h1>
 						<div className='my-auto'><ConnectWallet /></div>
 					</div>
 				</div>
@@ -25,7 +25,7 @@ const Home: FC = () => {
 						</div>
 						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-bojji hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
 							<p className='text-4xl'>2D Animation ⚔️</p>
-							<p className='text-lg'>Enjoyooor</p>
+							<p className='text-lg'>Enjoyooor but want to get into it</p>
 						</div>
 						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-tsunade hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
 							<p className='text-4xl'>Investing 💰</p>
@@ -42,12 +42,12 @@ const Home: FC = () => {
 
 						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-umaru hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
 							<p className='text-4xl'>Gaming 🕹️</p>
-							<p className='text-lg'>Dofus, Diablo/PoE, TFT, Smash, league</p>
+							<p className='text-lg'>Dofus, Diablo2/PoE, TFT, Smash, league</p>
 						</div>
 
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-rengoku hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
+						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-bojjifight hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
 							<p className='text-4xl'>Gym 🏋️‍♂️</p>
-							<p className='text-lg'>Push, pull, legs</p>
+							<p className='text-lg'>Push, pull, legs, street</p>
 						</div>
 
 						

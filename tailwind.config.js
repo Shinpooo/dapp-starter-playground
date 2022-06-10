@@ -13,6 +13,7 @@ module.exports = {
 				'umaru': "url('../../public/images/umaru.gif')",
 				'rengoku': "url('../../public/images/rengoku.gif')",
 				'bojji': "url('../../public/images/bojji.gif')",
+				'bojjifight': "url('../../public/images/bojjifight.gif')",
 			}
 },
 	},
