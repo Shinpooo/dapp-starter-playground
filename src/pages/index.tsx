@@ -44,8 +44,8 @@ const Home: FC = () => {
 				</div>
 				<Boop rotation={2} timing={200}>
 					<div className="text-white text-base font-thin mb-8 bg-black py-4 px-4 rounded-lg border-2 border-from-indigo-500 border-via-purple-500 border-to-pink-500">
-						Hey! Selim here -- I'm just a guy that loves experimenting & creating things for others. I
-						started my first side project at 20 and have been making stuff ever since! Currently, I'm
+						Hey! Selim here -- I&apos;m just a guy that loves experimenting & creating things for others. I
+						started my first side project at 20 and have been making stuff ever since! Currently, I&apos;m
 						self-employed at Nakalabs, a web3 agency where I get to work w/ customers.
 					</div>
 				</Boop>
@@ -108,7 +108,7 @@ const Home: FC = () => {
 							<a href="https://earnifty.xyz" rel="noreferrer" target="_blank">
 								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
 									<p className="text-4xl">Earnifty</p>
-									<p className="text-lg">A new way for NFTs to earn rewards.</p>
+									<p className="text-lg">A new way for NFTs to earn rewards</p>
 									<p className="text-sm">Tech: Nextjs, solidity, Moralis, hardhat</p>
 								</div>
 							</a>
