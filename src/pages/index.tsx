@@ -67,7 +67,7 @@ const Home: FC = () => {
 								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
 									<p className="text-4xl">WeGo</p>
 									<p className="text-lg">Optimize your car pooling</p>
-									<p className="text-sm">Tech: Python, Pyomo, Gurobi</p>
+									<p className="text-sm">Tech: Python, Mathematical Optimization, Gurobi</p>
 								</div>
 							</a>
 						</Boop>
