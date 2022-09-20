@@ -44,6 +44,7 @@ const wagmiClient = createClient({ autoConnect: true, connectors, provider })
 
 const App = ({ Component, pageProps }) => {
 	return (
+
 		<WagmiConfig client={wagmiClient}>
 			<RainbowKitProvider chains={chains} coolMode theme={midnightTheme()}>
 				<Component {...pageProps} />

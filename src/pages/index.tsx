@@ -2,55 +2,149 @@ import { FC } from 'react'
 import { APP_NAME } from '@/lib/consts'
 import { BookOpenIcon, CodeIcon, ShareIcon } from '@heroicons/react/outline'
 import ConnectWallet from '../components/ConnectWallet'
+import Boop from '../components/Boop'
+
 import Image from 'next/image';
+import github from "../../public/images/github.svg"
+import linkedin from '../../public/images/linkedin.svg'
+import profile from '../../public/images/naruto.jpg'
 
 
 const Home: FC = () => {
 	return (
-		<div className="dark bg-gray-900">
+		<div className="dark bg-gray-900 pb-10">
+			<div className="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2"></div>
 			<div className="relative flex flex-col justify-around min-h-screen py-4 bg-gray-100 dark items-top dark:bg-gray-900 sm:items-center sm:pt-0 max-w-4xl mx-auto px-6">
 				<div className="mx-auto w-full mb-10 py-16">
-					<div className="flex justify-between pt-8 sm:pt-0">
-						<h1 className="text-2xl md:text-4xl font-bold dark:text-white">👋 Hi! Pooshin here :)</h1>
-						<div className='my-auto'><ConnectWallet /></div>
+					<div className="flex justify-between pt-8 sm:pt-0 items-center">
+						<h1 className="text-2xl md:text-4xl font-bold dark:text-white">👋 Hi! Selim here :)</h1>
+						<div className="my-auto flex gap-4">
+							{/* <ConnectWallet /> */}
+							<div className="rounded-full">
+								<Image className="rounded-full" src={profile} width="96px" height="96px"></Image>
+							</div>
+							<div className="flex flex-col justify-around">
+								<div>
+									<a href="https://github.com/Shinpooo" rel="noreferrer" target="_blank">
+										<Image src={github}></Image>
+									</a>
+								</div>
+								<div>
+									<a
+										href="https://www.linkedin.com/in/s%C3%A9lim-el-mekki-9557a91a2/"
+										rel="noreferrer"
+										target="_blank"
+									>
+										<Image src={linkedin}></Image>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div className='text-white text-4xl font-bold mb-8'>Things I do</div>
+				<Boop rotation={2} timing={200}>
+					<div className="text-white text-base font-thin mb-8 bg-black py-4 px-4 rounded-lg border-2 border-from-indigo-500 border-via-purple-500 border-to-pink-500">
+						Hey! Selim here -- I'm just a guy that loves experimenting & creating things for others. I
+						started my first side project at 20 and have been making stuff ever since! Currently, I'm
+						self-employed at Nakalabs, a web3 agency where I get to work w/ customers.
+					</div>
+				</Boop>
+				<div className="text-white text-4xl font-bold mb-8">Things I made</div>
 				<div className="mx-auto w-full">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<Boop rotation={3} timing={200}>
+							<a href="https://github.com/Shinpooo/interest-free-bank" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">Interest-free Bank</p>
+									<p className="text-lg">Supply & borrow at 0% APR</p>
+									<p className="text-sm">Tech: Solidity, Foudry, Chainlink</p>
+								</div>
+							</a>
+						</Boop>
 
-					<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-ape hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
-							<p className='text-4xl'>Building things 💻</p>
-							<p className='text-lg'>Currently focused on web3 projects</p>
-						</div>
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-bojji hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
-							<p className='text-4xl'>2D Animation ⚔️</p>
-							<p className='text-lg'>Enjoyooor but want to get into it</p>
-						</div>
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-tsunade hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
-							<p className='text-4xl'>Investing 💰</p>
-							<p className='text-lg'>Mainly crypto research and stocks</p>
-						</div>
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-luffy hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
-							<p className='text-4xl'>Animes 📺</p>
-							<p className='text-lg'>Naruto, SNK, HXH, KNY, Bojji</p>
-						</div>
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-kira hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
-							<p className='text-4xl'>Research papers ✍️</p>
-							<p className='text-lg'>Energy, Optimization, Data, ML</p>
-						</div>
+						<Boop rotation={3} timing={200}>
+							<a href="https://github.com/Shinpooo/w3go" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">WeGo</p>
+									<p className="text-lg">Optimize your car pooling</p>
+									<p className="text-sm">Tech: Python, Pyomo, Gurobi</p>
+								</div>
+							</a>
+						</Boop>
 
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-umaru hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110 hover:bg-cover">
-							<p className='text-4xl'>Gaming 🕹️</p>
-							<p className='text-lg'>Dofus, Diablo2/PoE, TFT, Smash, league</p>
-						</div>
+						<Boop rotation={3} timing={200}>
+							<a href="https://curiouscards.vercel.app" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">CuriousCards</p>
+									<p className="text-lg">Ask anyone anything, get paid to reply!</p>
+									<p className="text-sm">Tech: Solidity, hardhat, nextjs, ethers, wagmi.sh, lens</p>
+								</div>
+							</a>
+						</Boop>
 
-						<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-bojjifight hover:bg-cover hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
-							<p className='text-4xl'>Gym 🏋️‍♂️</p>
-							<p className='text-lg'>Push, pull, legs, street</p>
-						</div>
+						<Boop rotation={3} timing={200}>
+							<a href="https://github.com/Shinpooo/pythermostat" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">Pythermostat</p>
+									<p className="text-lg">Optimize your home heating schedule</p>
+									<p className="text-sm">Tech: Python, Reinforcement learning, Pyomo</p>
+								</div>
+							</a>
+						</Boop>
+						<Boop rotation={3} timing={200}>
+							<a
+								href="https://scholar.google.com/citations?user=PFWYvcgAAAAJ"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">Research</p>
+									<p className="text-lg">Research papers @ Uliege.</p>
+									<p className="text-sm">Tech: Latex</p>
+								</div>
+							</a>
+						</Boop>
+						<Boop rotation={3} timing={200}>
+							<a href="https://earnifty.xyz" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">Earnifty</p>
+									<p className="text-lg">A new way for NFTs to earn rewards.</p>
+									<p className="text-sm">Tech: Nextjs, solidity, Moralis, hardhat</p>
+								</div>
+							</a>
+						</Boop>
+						<Boop rotation={3} timing={200}>
+							<a href="https://nakalabs.com" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">Nakalabs</p>
+									<p className="text-lg">A web3 agency, we provide help for builders</p>
+									<p className="text-sm">Tech: Solidity, Nextjs, web3</p>
+								</div>
+							</a>
+						</Boop>
+						<Boop rotation={3} timing={200}>
+							<a href="https://github.com/Shinpooo/finaviz" rel="noreferrer" target="_blank">
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">Finaviz</p>
+									<p className="text-lg">Get dashboards for your favorite stocks</p>
+									<p className="text-sm">Tech: Python, Django, PostgreSQL, yfinance</p>
+								</div>
+							</a>
+						</Boop>
 
-						
+						<Boop rotation={3} timing={200}>
+							<a
+								href="https://github.com/Shinpooo/Recommender-system-for-the-billiard-game"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
+									<p className="text-4xl">AICarom</p>
+									<p className="text-lg">An AI that learns to play billiards</p>
+									<p className="text-sm">Tech: Python, VPython, KerasRL</p>
+								</div>
+							</a>
+						</Boop>
 
 						{/* <div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold hover:bg-livai hover:text-transparent transtion duration-300 ease-out hover:ease-in hover:-translate-y-1 hover:scale-110">
 							<p className='text-4xl'>Design</p>
@@ -61,7 +155,7 @@ const Home: FC = () => {
 							<p className='text-4xl'>Quest</p>
 							<p className='text-lg'>The whole purpose of this website</p>
 						</div> */}
-						
+
 						{/* <div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Investooor</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Anime</div>
 						<div className='bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 rounded-2xl justify-center inline-block px-2 py-8 text-xl text-center text-black'>Gaming</div>
@@ -193,7 +287,7 @@ const Home: FC = () => {
 							</div>
 						</div>
 					</div> */}
-					
+
 					{/* <div className="flex justify-center mt-4 sm:items-center sm:justify-between">
 						<div className="text-sm text-center text-gray-500 sm:text-left">
 							<div className="flex items-center">
