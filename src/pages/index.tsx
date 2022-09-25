@@ -7,7 +7,7 @@ import Boop from '../components/Boop'
 import Image from 'next/image';
 import github from "../../public/images/github.svg"
 import linkedin from '../../public/images/linkedin.svg'
-import profile from '../../public/images/naruto.jpg'
+import profile from '../../public/images/profile.png'
 
 
 const Home: FC = () => {
@@ -31,7 +31,7 @@ const Home: FC = () => {
 								</div>
 								<div>
 									<a
-										href="https://www.linkedin.com/in/s%C3%A9lim-el-mekki-9557a91a2/"
+										href="https://www.linkedin.com/in/selim-el-mekki-9557a91a2/"
 										rel="noreferrer"
 										target="_blank"
 									>
@@ -57,7 +57,7 @@ const Home: FC = () => {
 								<div className="bg-gradient-to-r from-orange-600  to-violet-800 rounded-xl justify-center inline-block px-2 py-16 text-4xl text-center text-gray-200 font-semibold w-full">
 									<p className="text-4xl">Interest-free Bank</p>
 									<p className="text-lg">Supply & borrow at 0% APR</p>
-									<p className="text-sm">Tech: Solidity, Foudry, Chainlink</p>
+									<p className="text-sm">Tech: Solidity, Foundry, Chainlink</p>
 								</div>
 							</a>
 						</Boop>
